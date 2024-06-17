@@ -3,6 +3,9 @@ import {
   capadrone,
   classicDesign,
   fb,
+  femme,
+  homme1,
+  homme2,
   ingenieur,
   insta,
   linkedin,
@@ -194,4 +197,28 @@ export const Services = [
   "Drones Discount",
   "News",
   "Information",
+];
+
+export const testimonials = [
+  {
+    img: homme1,
+    name: "MUHAMMAD BILAL",
+    post: "UI/UX Web Designer",
+    content:
+      "I recently bought the DJI Mini 2, and I'm amazed by its performance. This little drone is incredibly lightweight and portable, making it perfect for traveling and outdoor adventures.",
+  },
+  {
+    img: homme2,
+    name: "JOHN FRANCIO",
+    post: "React Developper",
+    content:
+      "I recently bought the DJI Mini 2, and I'm amazed by its performance. This little drone is incredibly lightweight and portable, making it perfect for traveling and outdoor adventures.",
+  },
+  {
+    img: femme,
+    name: "MARRY QUEEN",
+    post: "UI/UX Web Designer",
+    content:
+      "I recently bought the DJI Mini 2, and I'm amazed by its performance. This little drone is incredibly lightweight and portable, making it perfect for traveling and outdoor adventures.",
+  },
 ];

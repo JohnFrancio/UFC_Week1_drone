@@ -12,7 +12,7 @@ function OurProduct() {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-20 mt-20'>
         {ourProducts.map((product, index) => (
           <div key={index}>
-            <img className={`w-full h-[500px] object-cover ${product.border == 'br' ? 'rounded-br-[80px]' : product.border == 'tl' ? 'rounded-tl-[80px]' : product.border == 'tr' ? 'rounded-tr-[80px]' : 'rounded-bl-[80px]'}`} src={product.img} alt={product.name} />
+            <img className={`w-full h-[350px] md:h-[500px] object-cover ${product.border == 'br' ? 'rounded-br-[80px]' : product.border == 'tl' ? 'rounded-tl-[80px]' : product.border == 'tr' ? 'rounded-tr-[80px]' : 'rounded-bl-[80px]'}`} src={product.img} alt={product.name} />
             <div className='flex justify-between items-center'>
               <div className='mt-5'>
                 <h3>{product.name}</h3>

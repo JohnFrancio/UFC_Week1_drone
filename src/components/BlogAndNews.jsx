@@ -10,8 +10,8 @@ function BlogAndNews() {
         <p className='text-gray-400 font-semibold'>Latest News</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 my-20 gap-10">
-        {blogs.map((blog) => (
-          <div>
+        {blogs.map((blog, index) => (
+          <div key={index}>
             <img className='w-full h-80 rounded-3xl object-cover' src={blog.img} alt={blog.user} />
             <h3 className='my-3 font-semibold'>By {blog.user} - {blog.post} - {blog.date}</h3>
             <h2 className='font-bold text-3xl mb-5'>{blog.title}</h2>

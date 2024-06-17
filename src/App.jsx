@@ -4,7 +4,7 @@ import { Brand, BlogAndNews, Hero, DroneProduct, Footer, Navbar, Testimonials, O
 function App() {
   return (
     //container
-    <div >
+    <div className='overflow-hidden'>
       <div className={`bg-[url('./assets/gradients.jpg')] w-[100%] bg-cover bg-center`}>
         <div className="w-[85%] m-auto">
           <Navbar/>

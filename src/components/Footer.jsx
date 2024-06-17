@@ -17,7 +17,8 @@ function Footer() {
           ))}
         </ul>
       </div>
-      <div className="grid grid-cols-[15%_15%_30%_40%] items-center border-b-[1.5px] py-3 border-gray-700">
+      {/* for medium device and up */}
+      <div className="hidden md:grid grid-cols-[15%_15%_30%_40%] items-center border-b-[1.5px] py-3 border-gray-700">
         <div><h1 className='font-bold text-xl text-white'>Usefull Link</h1></div>
         <div><h1 className='font-bold text-xl text-white'>Services</h1></div>
         <div><h1 className='font-bold text-xl text-white'>Contact Us</h1></div>
@@ -25,7 +26,7 @@ function Footer() {
           <img src={arrowDown} alt="down arrow" />
         </div>
       </div>
-      <div className="grid grid-cols-[15%_15%_27%_43%] items-center border-b-[1.5px] py-10 border-gray-700">
+      <div className="hidden md:grid grid-cols-[15%_15%_27%_43%] items-center border-b-[1.5px] py-10 border-gray-700">
         <div className='font-semibold text-white'>
           <ul className='flex flex-col gap-2'>
             {usefulLink.map((link, index) => (
@@ -67,6 +68,57 @@ function Footer() {
           </div>
           <img className='w-[100%] h-52 rounded-3xl object-cover' src={capadrone} alt="down arrow" />
         </div>
+      </div>
+      {/* for medium device and down */}
+      <div className="md:hidden grid grid-cols-2 border-b-[1.5px] py-3 border-gray-700">
+        <div className='text-white'>
+          <h1 className='font-bold text-xl '>Usefull Link</h1>
+          <ul className='flex flex-col gap-2'>
+            {Services.map((service, index) => (
+              <li key={index}>
+                <a href="#">{service}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className='text-white'>
+          <h1 className='font-bold text-xl '>Services</h1>
+          <ul className='flex flex-col gap-2'>
+            {Services.map((service, index) => (
+              <li key={index}>
+                <a href="#">{service}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className='md:hidden grid grid-cols-[25%_75%] items-center border-b-[1.5px] py-5 border-gray-700'>
+        <div>
+          <h1 className='font-bold text-xl text-white'>Contact Us</h1>
+        </div>
+        <div className='flex flex-col gap-3'>
+          <div className='text-center text-white rounded-2xl w-full h-auto bg-gradient-to-r from-gray-800 to-gray-400 p-[1px]'>
+            <div className='h-full w-full bg-[#351E39] rounded-2xl'>
+              <div className='p-2'>
+                <h3 className='text-xl'>Jamma Masjid Gali Ward No2</h3>
+              </div>
+            </div>
+          </div>
+          <div className='text-white rounded-2xl w-full h-auto bg-gradient-to-r from-gray-800 to-gray-400 p-[1px]'>
+            <div className='h-full w-full bg-[#351E39] rounded-2xl'>
+              <div className='ml-2 p-2'>
+                <h3 className='text-xl'>+923013781848</h3>
+                <h3 className='text-xl'>Profilbilal1@Gmai</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='md:hidden relative my-5 border-b-[1.5px] py-5 border-gray-700'>
+        <div className='absolute w-40 p-3 rounded-md top-[43%] left-[23%] opacity-70 bg-white text-center animate-bounce'>
+          <h1>Play Now</h1>
+        </div>
+        <img className='w-[100%] h-52 rounded-3xl object-cover' src={capadrone} alt="down arrow" />
       </div>
       <div className='flex justify-center p-10'>
         <h1 className='text-white'>Copyright &copy; John Francio</h1>

@@ -6,9 +6,9 @@ import { qualities } from '../constants'
 function DroneProduct() {
   return (
     <div className='mt-28'>
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-4">
         <div className=''>
-          <div className='-translate-x-4'>
+          <div className='md:-translate-x-4'>
             <div className='flex flex-col gap-3 font-bold text-4xl mb-5'>
               <h2>These Are Often considered</h2>
               <h2>For Drone Product Quality</h2>
@@ -19,7 +19,7 @@ function DroneProduct() {
               <p>Drone Product Quality.</p>
             </div>
           </div>
-          <div className='relative w-[500px] h-80 my-16'>
+          <div className='relative w-full h-80 my-16'>
             {/* image */}
             <img className='rounded-2xl z-10 h-full w-full object-cover' src={girl2} alt="girl1" />
             {/* for the rectangle */}
@@ -30,8 +30,8 @@ function DroneProduct() {
           </div>
         </div>
         <div className='flex flex-col gap-10 md:-translate-y-10 md:-ml-5'>
-          {qualities.map((quality) => (
-            <div className='relative rounded-[30px] w-full h-auto bg-gradient-to-l from-slate-300 via-white via-50% p-[1.5px]'>
+          {qualities.map((quality, index) => (
+            <div key={index} className='relative rounded-[30px] w-full h-auto bg-gradient-to-l from-slate-300 via-white via-50% p-[1.5px]'>
               <div className='h-full w-full bg-gradient-to-r from-transparent via-white to-white rounded-[30px]'>
                 <div className="absolute top-[60.5px] left-10 w-5 h-5 bg-[#C407ED] -translate-y-8 rounded-full"></div>
                 <div className='p-5 ml-14'>

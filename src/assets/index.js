@@ -21,6 +21,10 @@ import fb from "./facebook.svg";
 import youtube from "./youtube.svg";
 import twitter from "./twitter.svg";
 import arrowDown from "./Arrow - DOWN.svg";
+import homme1 from "./homme-mature_contenu.jpg";
+import homme2 from "./page-homme_contenu.jpg";
+import femme from "./portrait-jeune-femme_23-2148574874.jpg";
+import quotes from "./double-quotes-l-svgrepo-com.svg";
 
 export {
   product1,
@@ -46,4 +50,8 @@ export {
   twitter,
   youtube,
   arrowDown,
+  homme1,
+  homme2,
+  femme,
+  quotes,
 };

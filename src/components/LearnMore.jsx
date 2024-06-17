@@ -5,7 +5,7 @@ import PlayIcon from './PlayIcon'
 function LearnMore() {
   return (
     <div className='mt-40'>
-      <div className="flex flex-col md:flex-row items-center gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-16">
         <div className='relative'>
           <div className='absolute -top-[75px] blur-2xl bg-[#C407ED]/30 -left-10 w-32 h-32 rounded-full -z-20'></div>
           <div className='flex flex-col gap-3 font-bold text-4xl mb-5'>
@@ -17,11 +17,11 @@ function LearnMore() {
             <p>through our drones, we strive to drive progress and</p>
             <p>creativity in various industries and applications.</p>
           </div>
-          <div className='my-10 font-semibold text-[#C407ED]'>
+          <div className='mt-10 mb-5 md:my-10 font-semibold text-[#C407ED]'>
             <a href="#" className='underline underline-offset-4'>Learn more</a>
           </div>
         </div>
-        <div className='relative w-[500px] h-72 md:-mt-28'>
+        <div className='relative w-full h-72 md:-mt-28'>
           {/* image */}
           <img className='rounded-2xl z-10 h-full w-full object-cover' src={girl1} alt="girl1" />
           {/* for the rectangle */}
