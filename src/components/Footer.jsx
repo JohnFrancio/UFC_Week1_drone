@@ -115,7 +115,7 @@ function Footer() {
         </div>
       </div>
       <div className='md:hidden relative my-5 border-b-[1.5px] py-5 border-gray-700'>
-        <div className='absolute w-40 p-3 rounded-md top-[43%] left-[23%] opacity-70 bg-white text-center animate-bounce'>
+        <div className='absolute w-40 p-3 rounded-md top-[43%] left-[24%] opacity-70 bg-white text-center animate-bounce'>
           <h1>Play Now</h1>
         </div>
         <img className='w-[100%] h-52 rounded-3xl object-cover' src={capadrone} alt="down arrow" />
