@@ -6,8 +6,8 @@ function Hero() {
   return (
     <div className='overflow-hidden'>
       <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className='text-white my-10 md:my-20'>
-          <div className='flex flex-col gap-3 font-bold text-4xl md:text-7xl'>
+        <div className='text-white my-10 xl:my-20'>
+          <div className='flex flex-col gap-3 font-bold text-4xl xl:text-7xl'>
             <h1>The Best View</h1>
             <h1>In The World</h1>
             <h1>From Your Site</h1>
@@ -22,7 +22,7 @@ function Hero() {
           </div>
         </div>
         <div className='m-0'>
-          <img className='w-[100%] h-auto bg-center' src={heroImage} alt="" />
+          <img className='w-[100%] h-auto xl:-translate-y-16 bg-center' src={heroImage} alt="" />
         </div>
       </div>
     </div>
