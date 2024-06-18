@@ -31,7 +31,7 @@ function DroneProduct() {
         </div>
         <div className='flex flex-col gap-10 md:-translate-y-10 md:-ml-5'>
           {qualities.map((quality, index) => (
-            <div key={index} className='relative rounded-[30px] w-full h-auto bg-gradient-to-l from-slate-300 via-white via-50% p-[1.5px]'>
+            <div key={index} className='relative transition duration-300 hover:scale-105 rounded-[30px] w-full h-auto bg-gradient-to-l from-transparent via-transparent via-50% p-[1.5px]'>
               <div className='h-full w-full bg-gradient-to-r from-transparent via-white to-white rounded-[30px]'>
                 <div className="absolute top-[60.5px] left-10 w-5 h-5 bg-[#C407ED] -translate-y-8 rounded-full"></div>
                 <div className='p-5 ml-14'>

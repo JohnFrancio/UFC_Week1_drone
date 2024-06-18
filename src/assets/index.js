@@ -27,6 +27,9 @@ import femme from "./portrait-jeune-femme_23-2148574874.jpg";
 import quotes from "./double-quotes-l-svgrepo-com.svg";
 import droneDisplay from "./drone displqy.svg";
 import gps from "./location.svg";
+import close from "./light.svg";
+import menu from "./menu.svg";
+import arrowUp from "./Arrow - up.svg";
 
 export {
   product1,
@@ -58,4 +61,7 @@ export {
   quotes,
   droneDisplay,
   gps,
+  close,
+  menu,
+  arrowUp,
 };
