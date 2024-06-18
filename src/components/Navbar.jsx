@@ -10,7 +10,7 @@ function Navbar() {
   }
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="py-5 font-semibold overflow-hidden">
+    <div className="py-5 font-semibold">
       <nav className="flex justify-between items-center text-white font-bold">
         <div className='flex flex-col justify-center items-center mt-3'>
           <DroneLogo size={45}/>

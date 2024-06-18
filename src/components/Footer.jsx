@@ -13,7 +13,7 @@ function Footer() {
         </div>
         <ul className='flex gap-3'>
           {logoSocials.map((logo, index) => (
-            <img className={`${index == logoSocials.length - 1 ? 'mr-0 md:mr-10' : 'mr-0'}`} key={index} src={logo.logo} alt={logo.name} />
+            <img className={`${index == logoSocials.length - 1 ? 'mr-0 md:mr-10' : 'mr-0'} transition duration-200 hover:rotate-12 hover:scale-125`} key={index} src={logo.logo} alt={logo.name} />
           ))}
         </ul>
       </div>
