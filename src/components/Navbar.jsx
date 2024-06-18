@@ -44,7 +44,7 @@ function Navbar() {
           <button className="cursor-default text-black text-center border-[1.5px] border-white w-28 py-2 rounded-full transition duration-500 hover:-translate-y-1">Register</button>
         </div>
         {/* for nav sm and down */}
-        <div className='text-white lg:hidden flex items-center' onClick={() => setToggle((prev) => !prev)}>
+        <div className='text-white lg:hidden flex items-center overflow-hidden' onClick={() => setToggle((prev) => !prev)}>
           {(toggle) ? <img className='w-10 h-10' src={close} alt="close" /> : <img className='w-10 h-10' src={menu} alt="menu"/>}
         </div>
         {/* ul for mobile view */}
