@@ -25,6 +25,8 @@ import homme1 from "./homme-mature_contenu.jpg";
 import homme2 from "./page-homme_contenu.jpg";
 import femme from "./portrait-jeune-femme_23-2148574874.jpg";
 import quotes from "./double-quotes-l-svgrepo-com.svg";
+import droneDisplay from "./drone displqy.svg";
+import gps from "./location.svg";
 
 export {
   product1,
@@ -54,4 +56,6 @@ export {
   homme2,
   femme,
   quotes,
+  droneDisplay,
+  gps,
 };

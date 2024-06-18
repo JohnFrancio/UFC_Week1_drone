@@ -19,8 +19,8 @@ function Navbar() {
           ))}
         </ul>
         <div className='flex gap-2'>
-          <button className="bg-white text-black text-center border-[1.5px] border-white  w-28 py-2 rounded-full transition duration-500 hover:-translate-y-1">Login</button>
-          <button className="text-black text-center border-[1.5px] border-white w-28 py-2 rounded-full transition duration-500 hover:-translate-y-1">Register</button>
+          <button className="cursor-default bg-white text-black text-center border-[1.5px] border-white  w-28 py-2 rounded-full transition duration-500 hover:-translate-y-1">Login</button>
+          <button className="cursor-default text-black text-center border-[1.5px] border-white w-28 py-2 rounded-full transition duration-500 hover:-translate-y-1">Register</button>
         </div>
       </nav>
     </div>

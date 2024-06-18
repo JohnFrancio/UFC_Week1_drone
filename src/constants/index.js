@@ -2,8 +2,10 @@ import {
   brand,
   capadrone,
   classicDesign,
+  droneDisplay,
   fb,
   femme,
+  gps,
   homme1,
   homme2,
   ingenieur,
@@ -70,19 +72,19 @@ export const brandLogo = [
 
 export const howItWorks = [
   {
-    img: miniDrone,
+    img: droneDisplay,
     name: "Propellers",
     descri:
       "Generate thrust to lift the drone off the ground and control its movement in different directions.",
   },
   {
-    img: miniDrone,
+    img: gps,
     name: "GPS",
     descri:
       "GPS allow the drones to follow pre-programmed flight paths or waypoints autonomously",
   },
   {
-    img: miniDrone,
+    img: droneDisplay,
     name: "Gyroscope",
     descri:
       "The gyroscope measures the drone's angular rate or rotational movement around its axis.",
