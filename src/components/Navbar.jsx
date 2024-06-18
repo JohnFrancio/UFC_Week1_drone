@@ -10,8 +10,8 @@ function Navbar() {
   }
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="py-5 font-semibold">
-      <nav className="flex justify-between items-center overflow-hidden text-white font-bold">
+    <div className="py-5 font-semibold overflow-hidden">
+      <nav className="flex justify-between items-center text-white font-bold">
         <div className='flex flex-col justify-center items-center mt-3'>
           <DroneLogo size={45}/>
           <h1 className=''>DRONE</h1>
@@ -26,7 +26,7 @@ function Navbar() {
                   {dropDownOpen ? <img src={arrowUp} alt="" /> : <img src={arrowDown} alt="" />}
                 </div>
                 {dropDownOpen && (
-                  <ul className='absolute -mt-1 rounded shadow-lg flex'>
+                  <ul className='absolute mt-1 rounded shadow-lg flex'>
                     {link.drop.map((dropItem, index) => (
                       <li className='px-4 py-2 cursor-pointer' key={index}>{dropItem}</li>
                     ))}
@@ -44,24 +44,24 @@ function Navbar() {
           <button className="cursor-default text-black text-center border-[1.5px] border-white w-28 py-2 rounded-full transition duration-500 hover:-translate-y-1">Register</button>
         </div>
         {/* for nav sm and down */}
-        <div className='text-white lg:hidden flex items-center overflow-hidden' onClick={() => setToggle((prev) => !prev)}>
+        <div className='text-white lg:hidden' onClick={() => setToggle((prev) => !prev)}>
           {(toggle) ? <img className='w-10 h-10' src={close} alt="close" /> : <img className='w-10 h-10' src={menu} alt="menu"/>}
         </div>
         {/* ul for mobile view */}
-        <div className={`${toggle ? 'flex' : 'hidden'} bg-black/25 flex-col p-6 absolute right-0 top-20 mx-4 my-2 min-w-[140px] rounded-xl sidebar overflow-hidden  h-auto`}>
-          <ul className="list-none justify-center flex flex-col">
+        <div className={`${toggle ? 'flex' : 'hidden'} bg-black/25 flex-col p-6 absolute right-0 top-20 rounded-xl sidebar mr-1`}>
+          <ul className="list-none flex flex-col">
             {navLink.map((link, index) => (
-              <li key={index} className={`relative py-4 ${(index == navLink.length - 1) ? '-mr-20' : 'mr-4'}`}>
+              <li key={index} className={`relative py-4`}>
                 { link.drop ? (
                   <>
                   <div className='flex gap-1' onClick={handleDrop}>
-                    <button className='cursor-pointer'>{link.name}</button>
-                    {dropDownOpen ? <img src={arrowUp} alt="" /> : <img src={arrowDown} alt="" />}
+                    <button className='cursor-default'>{link.name}</button>
+                    {dropDownOpen ? <img src={arrowUp} alt="arrowUp" /> : <img src={arrowDown} alt="arrowDown" />}
                   </div>
                   {dropDownOpen && (
-                    <ul className='absolute -mt-1 rounded shadow-lg flex'>
+                    <ul className='absolute -mt-1 shadow-lg flex'>
                       {link.drop.map((dropItem, index) => (
-                        <li className='px-4 py-2 cursor-pointer' key={index}>{dropItem}</li>
+                        <li className='px-2 py-2 cursor-pointer' key={index}>{dropItem}</li>
                       ))}
                     </ul>
                   )}
@@ -72,7 +72,7 @@ function Navbar() {
               </li>
             ))}
           </ul>
-            <button className="text-white">Login | Register</button>
+          <button className="text-white">Login | Register</button>
         </div>
       </nav>
     </div>
