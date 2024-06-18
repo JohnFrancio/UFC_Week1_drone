@@ -48,7 +48,7 @@ function Navbar() {
           {(toggle) ? <img className='w-10 h-10' src={close} alt="close" /> : <img className='w-10 h-10' src={menu} alt="menu"/>}
         </div>
         {/* ul for mobile view */}
-        <div className={`${toggle ? 'flex' : 'hidden'} bg-black/25 flex-col p-6 absolute right-0 top-20 rounded-xl sidebar mr-1`}>
+        <div className={`${toggle ? 'flex' : 'hidden'} overflow-hidden bg-black/25 flex-col p-6 absolute right-0 top-20 rounded-xl sidebar mr-1`}>
           <ul className="list-none flex flex-col">
             {navLink.map((link, index) => (
               <li key={index} className={`relative py-4`}>
