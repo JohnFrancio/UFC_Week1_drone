@@ -49,17 +49,17 @@ function Navbar() {
         </div>
         {/* ul for mobile view */}
         <div className={`${toggle ? 'flex' : 'hidden'} overflow-hidden bg-black/25 flex-col p-6 absolute right-0 top-20 rounded-xl sidebar mr-1`}>
-          <ul className="list-none flex flex-col">
+          <ul className="list-none flex flex-col overflow-hidden">
             {navLink.map((link, index) => (
               <li key={index} className={`relative py-4`}>
                 { link.drop ? (
                   <>
-                  <div className='flex gap-1' onClick={handleDrop}>
+                  <div className='flex gap-1 overflow-hidden' onClick={handleDrop}>
                     <button className='cursor-default'>{link.name}</button>
                     {dropDownOpen ? <img src={arrowUp} alt="arrowUp" /> : <img src={arrowDown} alt="arrowDown" />}
                   </div>
                   {dropDownOpen && (
-                    <ul className='absolute -mt-1 shadow-lg flex'>
+                    <ul className='absolute -mt-1 shadow-lg flex overflow-hidden'>
                       {link.drop.map((dropItem, index) => (
                         <li className='px-2 py-2 cursor-pointer' key={index}>{dropItem}</li>
                       ))}
